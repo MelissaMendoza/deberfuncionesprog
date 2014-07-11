@@ -9,7 +9,7 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 /**
  *
- * @author Eugenio
+ * @author Melissa
  */
 public class Ejercicio07 
 {

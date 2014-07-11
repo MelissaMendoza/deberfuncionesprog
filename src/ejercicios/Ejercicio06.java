@@ -11,7 +11,7 @@ package ejercicios;
 import javax.swing.JOptionPane;
 /**
  *
- * @author Eugenio
+ * @author Melissa
  */
 public class Ejercicio06 
 {

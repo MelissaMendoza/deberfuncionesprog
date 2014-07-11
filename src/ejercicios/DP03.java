@@ -12,15 +12,14 @@ import javax.swing.JOptionPane;
  *
  * @author Melissa
  */
-public class DP02 {
+public class DP03 {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         
-        int x,y,r;
+        int x,y,r,proceso;
         x=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor del entero X"));
         y=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor del entero Y"));
         if (x<=0 || x>255)
@@ -32,22 +31,20 @@ public class DP02 {
         {
             int[] arreglo=new int[y];
             arreglo[0]=x;
-            for (int i = 1; i < arreglo.length; i++) 
+            for (int i = 1;i<arreglo.length; i++) 
             {
-               x=x*(i+1);
-               arreglo[i]=x;
-                System.out.println(i+" "+arreglo[i]);               
+               proceso=x/(i+1);
+               arreglo[i]=proceso;           
             }
             for (int i = 0; i < arreglo.length; i++) 
-            {
-                if(i==(y-1))
+            { 
+              if(i==(y-1))
                 {
-                    r=arreglo[i];
-                    JOptionPane.showMessageDialog(null,"Resultado "+r);
-                }
+                    
+                    JOptionPane.showMessageDialog(null,"Resultado "+arreglo[i]);
+                }  
             }
         }
-        
     }
     
 }
